@@ -1,27 +1,221 @@
 [
     {
-        "name": "",
-        "content": "",
-        "protein": "",
+        "name": "Greek Yogurt Smoothie",
+        "content": "Protein Content: Approx. 23 grams.",
+        "protein": "23 grams",
         "image": "",
+        "besttime": "Jump-start your day with this protein-rich breakfast smoothie.",
         "ingredients": [
             {
-                "name": "",
+                "name": "Greek yogurt",
+                "amount": "1 cup",
                 "image": "",
                 "fact": ""
             },
             {
-                "name": "",
+                "name": "banana",
+                "amount": "½",
                 "image": "",
                 "fact": ""
             },
             {
-                "name": "",
+                "name": "strawberries",
+                "amount": "¼ cup",
                 "image": "",
                 "fact": ""
             },
             {
-                "name": "",
+                "name": "honey",
+                "amount": "1 tablespoon",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "chia seeds",
+                "amount": "1 teaspoon",
+                "image": "",
+                "fact": ""
+            }
+        ]
+    },
+    {
+        "name": "Silken Tofu Berry Blend",
+        "content": "Protein Content: About 14 grams.",
+        "protein": "14 grams",
+        "image": "",
+        "besttime": "Perfect after your morning workout for muscle recovery.",
+        "ingredients": [
+            {
+                "name": "silken tofu",
+                "amount": "½ cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "mixed berries",
+                "amount": "1 cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "almond milk",
+                "amount": "1 cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "honey",
+                "amount": "1 tablespoon",
+                "image": "",
+                "fact": ""
+            }
+        ]
+    },
+    {
+        "name": "Hemp Seed Nutty Shake",
+        "content": "Protein Content: Around 18 grams.",
+        "protein": "18 grams",
+        "image": "",
+        "besttime": "Ideal post-workout to aid in recovery with its rich protein and healthy fats.",
+        "ingredients": [
+            {
+                "name": "hemp seeds",
+                "amount": "2 tablespoons",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "almond butter",
+                "amount": "2 tablespoons",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "banana",
+                "amount": "1",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "soy milk",
+                "amount": "1 cup",
+                "image": "",
+                "fact": ""
+            }
+        ]
+    },
+    {
+        "name": "Peanut Butter Power Smoothie",
+        "content": "Protein Content: Approximately 30 grams.",
+        "protein": "30 grams",
+        "image": "",
+        "besttime": "Great as a post-workout drink or a satisfying breakfast.",
+        "ingredients": [
+            {
+                "name": "peanut butter",
+                "amount": "2 tablespoons",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "Greek yogurt",
+                "amount": "1 cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "rolled oats",
+                "amount": "½ cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "flaxseeds",
+                "amount": "1 tablespoon",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "milk",
+                "amount": "1 cup",
+                "image": "",
+                "fact": ""
+            }
+        ]
+    },
+    {
+        "name": "Quinoa Fruit Fusion",
+        "content": "Protein Content: About 10 grams.",
+        "protein": "10 grams",
+        "image": "",
+        "besttime": "A fantastic mid-morning snack to keep your energy levels high.",
+        "ingredients": [
+            {
+                "name": "cooked quinoa",
+                "amount": "¼ cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "coconut water",
+                "amount": "1 cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "pineapple chunks",
+                "amount": "½ cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "spirulina powder",
+                "amount": "1 teaspoon",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "lime juice",
+                "amount": "1 tablespoon",
+                "image": "",
+                "fact": ""
+            }
+        ]
+    },
+    {
+        "name": "Cottage Cheese Citrus Shake",
+        "content": "Protein Content: Roughly 20 grams.",
+        "protein": "20 grams",
+        "image": "",
+        "besttime": "Enjoy as a nighttime snack; its slow-digesting proteins help with overnight muscle repair.",
+        "ingredients": [
+            {
+                "name": "cottage cheese",
+                "amount": "½ cup",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "orange peeled and segmented",
+                "amount": "1",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "vanilla extract",
+                "amount": "¼ teaspoon",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "honey",
+                "amount": "1 tablespoon",
+                "image": "",
+                "fact": ""
+            },
+            {
+                "name": "water or orange juice",
+                "amount": "½ cup",
                 "image": "",
                 "fact": ""
             }
