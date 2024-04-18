@@ -1,16 +1,138 @@
 body {
   font-family: "EB Garamond", serif;
+  margin: 0;
 }
 
 /* Navbar */
 .nav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav_button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
   background-color: rgba(0, 0, 0, 0.516);
   color: beige;
   padding: 5px 10px;
   text-decoration: none;
+}
+
+/* Layout */
+.layoutContainer {
+  height: 100vh;
+}
+
+/* Smoothis Lessons Page */
+
+.smoothie-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F9F9F9;
+  height: 100vh;
+}
+
+.smoothie-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.smoothie-details {
+  padding: 5rem;
+}
+
+.smoothie-title {
+  font-size: 48px;
+  color: #232323;
+  margin-bottom: 20px;
+}
+
+.smoothie-content {
+  color: #232323;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.smoothie-drinking-time {
+  color: #232323;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.smoothie-ingredient-funfact {
+  background-color: #DCDCDC;
+  border: 1px solid #b9b9b9;
+  padding: 0.5rem;
+}
+
+.smoothie-ingredients {
+  color: #232323;
+  display: flex;
+}
+
+.ingredient-detail {
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.ingredient-detail:nth-child(odd) {
+  background-color: #E6E6E6;
+}
+
+.ingredient-detail:nth-child(even) {
+  background-color: #DCDCDC;
+}
+
+.ingredient-detail:hover {
+  background-color: #b9b9b9;
+  cursor: pointer;
+}
+
+.ingredient-detail-name {
+  font-size: 1.5rem;
+}
+
+.smoothie-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smoothie-image-container img {
+  height: 100vh;
+}
+
+.button-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.516);
+  color: beige;
+  padding: 5px 10px;
+  border: 0px;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.button-right:hover {
+  background-color: #000;
+  cursor: pointer;
+  height: 6rem;
+  width: 6rem;
 }

@@ -1,9 +1,16 @@
-[
+import ImageGreekYogurt from '../images/greek_yogurt.png'
+import ImageTofuBerry from '../images/tofu_berry.png'
+import ImagePeanutButter from '../images/peanut_butter.jpg'
+import ImageQuinoa from '../images/quinoa.png'
+import ImageCheeseCitrus from '../images/cheese_citrus.png'
+// import ImageSpirulina from '../images/spirulina.png'
+
+const smoothiesData = [
     {
         "name": "Greek Yogurt Smoothie",
-        "content": "Protein Content: Approx. 23 grams.",
+        "content": "Packed with almost double the protein of regular yogurt, Greek yogurt is strained to ditch most of the lactose, making it a powerhouse of protein and gut-friendly probiotics.",
         "protein": "23 grams",
-        "image": "",
+        "image": ImageGreekYogurt,
         "besttime": "Jump-start your day with this protein-rich breakfast smoothie.",
         "ingredients": [
             {
@@ -11,12 +18,6 @@
                 "amount": "1 cup",
                 "image": "",
                 "fact": "Greek yogurt contains almost twice the protein of regular yogurt."
-            },
-            {
-                "name": "banana",
-                "amount": "½",
-                "image": "",
-                "fact": "Bananas are known for their high potassium content, essential for heart health."
             },
             {
                 "name": "strawberries",
@@ -40,9 +41,9 @@
     },
     {
         "name": "Silken Tofu Berry Blend",
-        "content": "Protein Content: About 14 grams.",
+        "content": "Derived from soy, this smooth operator blends perfectly into your drinks, enriching them with protein and essential bone-building calcium without altering the texture.",
         "protein": "14 grams",
-        "image": "",
+        "image": ImageTofuBerry,
         "besttime": "Perfect after your morning workout for muscle recovery.",
         "ingredients": [
             {
@@ -72,43 +73,10 @@
         ]
     },
     {
-        "name": "Hemp Seed Nutty Shake",
-        "content": "Protein Content: Around 18 grams.",
-        "protein": "18 grams",
-        "image": "",
-        "besttime": "Ideal post-workout to aid in recovery with its rich protein and healthy fats.",
-        "ingredients": [
-            {
-                "name": "hemp seeds",
-                "amount": "2 tablespoons",
-                "image": "",
-                "fact": "Hemp seeds are a complete protein, containing all nine essential amino acids."
-            },
-            {
-                "name": "almond butter",
-                "amount": "2 tablespoons",
-                "image": "",
-                "fact": "Almond butter provides a good amount of monounsaturated fats, which are heart-healthy."
-            },
-            {
-                "name": "banana",
-                "amount": "1",
-                "image": "",
-                "fact": "The banana plant is not a tree but a high herb that can grow up to 15 meters."
-            },
-            {
-                "name": "soy milk",
-                "amount": "1 cup",
-                "image": "",
-                "fact": "Soy milk is a popular dairy alternative that has been used in China for centuries."
-            }
-        ]
-    },
-    {
         "name": "Peanut Butter Power Smoothie",
-        "content": "Protein Content: Approximately 30 grams.",
+        "content": "This spread is rich in bioactive compounds that could enhance heart health and improve blood flow.",
         "protein": "30 grams",
-        "image": "",
+        "image": ImagePeanutButter,
         "besttime": "Great as a post-workout drink or a satisfying breakfast.",
         "ingredients": [
             {
@@ -116,12 +84,6 @@
                 "amount": "2 tablespoons",
                 "image": "",
                 "fact": "Peanut butter was first patented by a Canadian pharmacist as a protein substitute for people with poor teeth."
-            },
-            {
-                "name": "Greek yogurt",
-                "amount": "1 cup",
-                "image": "",
-                "fact": "Greek yogurt is strained extensively to remove liquid whey and lactose, leaving behind a thicker texture."
             },
             {
                 "name": "rolled oats",
@@ -147,7 +109,7 @@
         "name": "Quinoa Fruit Fusion",
         "content": "Protein Content: About 10 grams.",
         "protein": "10 grams",
-        "image": "",
+        "image": ImageQuinoa,
         "besttime": "A fantastic mid-morning snack to keep your energy levels high.",
         "ingredients": [
             {
@@ -184,9 +146,9 @@
     },
     {
         "name": "Cottage Cheese Citrus Shake",
-        "content": "Protein Content: Roughly 20 grams.",
+        "content": "It's rich in slow-digesting casein protein, which helps prevent muscle breakdown overnight and supports weight loss and muscle mass because of its high protein and low fat content.",
         "protein": "20 grams",
-        "image": "",
+        "image": ImageCheeseCitrus,
         "besttime": "Enjoy as a nighttime snack; its slow-digesting proteins help with overnight muscle repair.",
         "ingredients": [
             {
@@ -200,12 +162,6 @@
                 "amount": "1",
                 "image": "",
                 "fact": "Oranges are one of the most popular fruits around the world and are known for their high vitamin C content."
-            },
-            {
-                "name": "vanilla extract",
-                "amount": "¼ teaspoon",
-                "image": "",
-                "fact": "Vanilla, derived from orchids, is the second most expensive spice after saffron due to its labor-intensive production."
             },
             {
                 "name": "honey",
@@ -222,3 +178,5 @@
         ]
     }
 ]
+
+export default smoothiesData;
