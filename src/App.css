@@ -24,6 +24,11 @@ body {
   text-decoration: none;
 }
 
+.nav_button:hover {
+  background-color: rgba(0, 0, 0, 0.745);
+  cursor: pointer;
+}
+
 /* Layout */
 .layoutContainer {
   height: 100vh;
@@ -222,4 +227,44 @@ body {
 .success-text {
   color: rgb(87, 162, 62);
   font-size: 15px;
+}
+
+/* Home Page */
+.home_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home_padding {
+  padding: 5rem;
+  text-align: center;
+  color: #232323;
+}
+
+.main_btn {
+  background-color: rgba(0, 0, 0, 0.516);
+  color: beige;
+  padding: 10px 20px;
+  border: 0;
+}
+
+.main_btn:hover {
+  background-color: rgba(0, 0, 0, 0.745);
+  cursor: pointer;
+}
+
+.secondary_btn {
+  color: #232323;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.516);
+  margin-left: 10px;
+}
+
+.secondary_btn:hover {
+  background-color: rgba(0, 0, 0, 0.745);
+  cursor: pointer;
+  color: beige;
 }
