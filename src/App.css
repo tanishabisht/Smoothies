@@ -136,3 +136,90 @@ body {
   height: 6rem;
   width: 6rem;
 }
+
+/* Quiz */
+
+.quiz-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F9F9F9;
+  height: 100vh;
+}
+
+.quiz-question-container {
+  flex: 1;
+  padding: 5rem;
+  background-color: #E6E6E6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quiz-options-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-option {
+  background-color: rgba(0, 0, 0, 0.516);
+  font-family: "EB Garamond", serif;
+  color: beige;
+  border: 0px;
+  width: 70%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.quiz-option:hover {
+  background-color: rgba(0, 0, 0, 0.725);
+  cursor: pointer;
+}
+
+.quiz-option:focus {
+  background-color: rgba(0, 0, 0, 0.895);
+}
+
+.check-button {
+  border: 1px solid #232323;
+  color: #232323;
+  padding: 10px 20px;
+  width: 70%;
+  margin-top: 5rem;
+  font-weight: 800;
+}
+
+.check-button:hover {
+  background: #232323;
+  color: beige;
+  cursor: pointer;
+}
+
+.next {
+  border: 2px solid rgb(87, 162, 62);
+  color: rgb(87, 162, 62);
+}
+
+.wrong-outline {
+  border: 1px solid rgb(251, 103, 103);
+}
+
+.error-text {
+  color: rgb(251, 103, 103);
+  font-size: 15px;
+}
+
+.correct-outline {
+  border: 2px solid rgb(87, 162, 62);
+}
+
+.success-text {
+  color: rgb(87, 162, 62);
+  font-size: 15px;
+}
