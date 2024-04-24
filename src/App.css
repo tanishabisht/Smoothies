@@ -30,7 +30,7 @@ body {
 } */
 
 .nav {
-  background-color: #9EA864;
+  background-color: #6c6c6c;
   color: white;
   padding: 10px;
   display: flex;
@@ -48,6 +48,13 @@ body {
   color: white;
   text-decoration: none;
   margin-right: 10px;
+}
+
+.nav a:hover {
+  color: #9EA864;
+  text-decoration: none;
+  margin-right: 10px;
+  background-color: beige;
 }
 
 .nav_button {
