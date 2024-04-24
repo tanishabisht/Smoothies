@@ -51,17 +51,129 @@ body {
   height: 100vh;
 }
 
+.smoothie-id-1{
+  background-color: #F1D0D7;
+  .smoothie-title {
+    color: #B59198;
+  }
+  .smoothie-content {
+    color: #B59198;
+  }
+  .ingredient-detail:nth-child(1) {
+    background-color: #D2A9B1;
+  }.ingredient-detail:nth-child(2) {
+    background-color: #B59198;
+  }.ingredient-detail:nth-child(3) {
+    background-color: #FFEFF3;
+    .ingredient-detail-name, .ingredient-detail-amount{
+      color: #B59198;
+    }
+  }.ingredient-detail:nth-child(4) {
+    background-color: #D2A9B1;
+  }
+}
+
+.smoothie-id-2{
+  background-color: #F9E2C4;
+  .smoothie-title {
+    color: #B09166;
+  }
+  .smoothie-content {
+    color: #B09166;
+  }
+  .ingredient-detail:nth-child(1) {
+    background-color: #CFB086;
+  }.ingredient-detail:nth-child(2) {
+    background-color: #B09166;
+  }.ingredient-detail:nth-child(3) {
+    background-color: #FFF1DF;
+    .ingredient-detail-name, .ingredient-detail-amount{
+      color: #B09166;
+    }
+  }.ingredient-detail:nth-child(4) {
+    background-color: #CFB086;
+  }
+}
+
+.smoothie-id-3{
+  background-color: #F1D0D7;
+  .smoothie-title {
+    color: #B59198;
+  }
+  .smoothie-content {
+    color: #B59198;
+  }
+  .ingredient-detail:nth-child(1) {
+    background-color: #D2A9B1;
+  }.ingredient-detail:nth-child(2) {
+    background-color: #B59198;
+  }.ingredient-detail:nth-child(3) {
+    background-color: #FFEFF3;
+    .ingredient-detail-name, .ingredient-detail-amount{
+      color: #B59198;
+    }
+  }.ingredient-detail:nth-child(4) {
+    background-color: #D2A9B1;
+  }
+}
+
+.smoothie-id-4{
+  background-color: #F9E2C4;
+  .smoothie-title {
+    color: #B09166;
+  }
+  .smoothie-content {
+    color: #B09166;
+  }
+  .ingredient-detail:nth-child(1) {
+    background-color: #CFB086;
+  }.ingredient-detail:nth-child(2) {
+    background-color: #B09166;
+  }.ingredient-detail:nth-child(3) {
+    background-color: #FFF1DF;
+    .ingredient-detail-name, .ingredient-detail-amount{
+      color: #B09166;
+    }
+  }.ingredient-detail:nth-child(4) {
+    background-color: #CFB086;
+  }
+}
+
+.smoothie-id-5{
+  background-color: #FFCD4E;
+  .smoothie-title {
+    color: #B38D2B;
+  }
+  .smoothie-content {
+    color: #B38D2B;
+  }
+  .ingredient-detail:nth-child(1) {
+    background-color: #DBA825;
+  }.ingredient-detail:nth-child(2) {
+    background-color: #B38D2B;
+  }.ingredient-detail:nth-child(3) {
+    background-color: #FFE8AC;
+    .ingredient-detail-name, .ingredient-detail-amount{
+      color: #B38D2B;
+    }
+  }.ingredient-detail:nth-child(4) {
+    background-color: #DBA825;
+  }
+}
+
 .smoothie-details {
   padding: 5rem;
 }
 
 .smoothie-title {
+  font-family: "Coustard", serif;
   font-size: 48px;
   color: #232323;
   margin-bottom: 20px;
 }
 
 .smoothie-content {
+  font-family: "Crete Round", serif;
   color: #232323;
   font-size: 18px;
   margin-bottom: 10px;
@@ -91,14 +203,6 @@ body {
   text-align: center;
 }
 
-.ingredient-detail:nth-child(odd) {
-  background-color: #E6E6E6;
-}
-
-.ingredient-detail:nth-child(even) {
-  background-color: #DCDCDC;
-}
-
 .ingredient-detail:hover {
   background-color: #b9b9b9;
   cursor: pointer;
@@ -106,6 +210,12 @@ body {
 
 .ingredient-detail-name {
   font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+.ingredient-detail-amount {
+  font-size: 1rem;
+  color: #FFFFFF;
 }
 
 .smoothie-image-container {
@@ -148,18 +258,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F9F9F9;
+  background-color: #E8EFBC;
   height: 100vh;
 }
 
 .quiz-question-container {
   flex: 1;
   padding: 5rem;
-  background-color: #E6E6E6;
+  background-color: #FBFFE2;
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.question-number {
+  color: #9EA864;
+}
+
+.question {
+  color: #9EA864;
 }
 
 .quiz-options-container {
@@ -171,9 +289,9 @@ body {
 }
 
 .quiz-option {
-  background-color: rgba(0, 0, 0, 0.516);
+  background-color: #C2CB8F;
   font-family: "EB Garamond", serif;
-  color: beige;
+  color: rgb(70, 70, 63);
   border: 0px;
   width: 70%;
   margin-top: 10px;
@@ -183,17 +301,18 @@ body {
 }
 
 .quiz-option:hover {
-  background-color: rgba(0, 0, 0, 0.725);
+  background-color: beige;
   cursor: pointer;
 }
 
 .quiz-option:focus {
-  background-color: rgba(0, 0, 0, 0.895);
+  background-color: beige;
 }
 
 .check-button {
-  border: 1px solid #232323;
-  color: #232323;
+  border: 1px solid #C2CB8F;
+  background-color: beige;
+  color: #9EA864;
   padding: 10px 20px;
   width: 70%;
   margin-top: 5rem;
@@ -201,7 +320,7 @@ body {
 }
 
 .check-button:hover {
-  background: #232323;
+  background: #9EA864;
   color: beige;
   cursor: pointer;
 }

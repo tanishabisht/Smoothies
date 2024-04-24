@@ -43,7 +43,7 @@ const LessonPage = () => {
 
     return (
         <div className='smoothie-container'>
-            <div className='smoothie-content-container'>
+            <div className={`smoothie-content-container smoothie-id-${smoothie.id}`}>
                 <div className='smoothie-details' onClick={handleOutsideClick}>
                     <h1 className='smoothie-title'>{smoothie.name}</h1>
                     <p className='smoothie-content'>{smoothie.content}</p>

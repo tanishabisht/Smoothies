@@ -7,6 +7,7 @@ import ImageCheeseCitrus from '../images/cheese_citrus.png'
 
 const smoothiesData = [
     {
+        "id": 1,
         "name": "Greek Yogurt Smoothie",
         "content": "Packed with almost double the protein of regular yogurt, Greek yogurt is strained to ditch most of the lactose, making it a powerhouse of protein and gut-friendly probiotics.",
         "protein": "23 grams",
@@ -40,39 +41,7 @@ const smoothiesData = [
         ]
     },
     {
-        "name": "Silken Tofu Berry Blend",
-        "content": "Derived from soy, this smooth operator blends perfectly into your drinks, enriching them with protein and essential bone-building calcium without altering the texture.",
-        "protein": "14 grams",
-        "image": ImageTofuBerry,
-        "besttime": "Perfect after your morning workout for muscle recovery.",
-        "ingredients": [
-            {
-                "name": "silken tofu",
-                "amount": "½ cup",
-                "image": "",
-                "fact": "Silken tofu is made by coagulating soy milk without curdling it, providing a smooth texture ideal for smoothies."
-            },
-            {
-                "name": "mixed berries",
-                "amount": "1 cup",
-                "image": "",
-                "fact": "Berries are among the highest antioxidant foods in the world."
-            },
-            {
-                "name": "almond milk",
-                "amount": "1 cup",
-                "image": "",
-                "fact": "Almond milk is a dairy-free milk that contains no cholesterol or lactose."
-            },
-            {
-                "name": "honey",
-                "amount": "1 tablespoon",
-                "image": "",
-                "fact": "Honey has been used as a sweetener for over 8,000 years."
-            }
-        ]
-    },
-    {
+        "id": 2,
         "name": "Peanut Butter Power Smoothie",
         "content": "This spread is rich in bioactive compounds that could enhance heart health and improve blood flow.",
         "protein": "30 grams",
@@ -106,6 +75,41 @@ const smoothiesData = [
         ]
     },
     {
+        "id": 3,
+        "name": "Silken Tofu Berry Blend",
+        "content": "Derived from soy, this smooth operator blends perfectly into your drinks, enriching them with protein and essential bone-building calcium without altering the texture.",
+        "protein": "14 grams",
+        "image": ImageTofuBerry,
+        "besttime": "Perfect after your morning workout for muscle recovery.",
+        "ingredients": [
+            {
+                "name": "silken tofu",
+                "amount": "½ cup",
+                "image": "",
+                "fact": "Silken tofu is made by coagulating soy milk without curdling it, providing a smooth texture ideal for smoothies."
+            },
+            {
+                "name": "mixed berries",
+                "amount": "1 cup",
+                "image": "",
+                "fact": "Berries are among the highest antioxidant foods in the world."
+            },
+            {
+                "name": "almond milk",
+                "amount": "1 cup",
+                "image": "",
+                "fact": "Almond milk is a dairy-free milk that contains no cholesterol or lactose."
+            },
+            {
+                "name": "honey",
+                "amount": "1 tablespoon",
+                "image": "",
+                "fact": "Honey has been used as a sweetener for over 8,000 years."
+            }
+        ]
+    },
+    {
+        "id": 4,
         "name": "Quinoa Fruit Fusion",
         "content": "Protein Content: About 10 grams.",
         "protein": "10 grams",
@@ -145,6 +149,7 @@ const smoothiesData = [
         ]
     },
     {
+        "id": 5,
         "name": "Cottage Cheese Citrus Shake",
         "content": "It's rich in slow-digesting casein protein, which helps prevent muscle breakdown overnight and supports weight loss and muscle mass because of its high protein and low fat content.",
         "protein": "20 grams",
