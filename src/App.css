@@ -4,7 +4,7 @@ body {
 }
 
 /* Navbar */
-.nav {
+/* .nav {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -27,11 +27,40 @@ body {
 .nav_button:hover {
   background-color: rgba(0, 0, 0, 0.745);
   cursor: pointer;
+} */
+
+.nav {
+  background-color: #9EA864;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.nav_button {
+  background-color: #4CAF50;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
 }
 
 /* Layout */
 .layoutContainer {
-  height: 100vh;
+  height: 94vh;
 }
 
 /* Smoothis Lessons Page */
@@ -41,14 +70,15 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #F9F9F9;
-  height: 100vh;
+  height: 100%;
 }
 
 .smoothie-content-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
+  flex: 1;
 }
 
 .smoothie-id-1{
@@ -222,10 +252,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  flex: 1;
 }
 
 .smoothie-image-container img {
-  height: 100vh;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .button-right {
@@ -259,17 +294,21 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #E8EFBC;
-  height: 100vh;
+  height: 100%;
 }
 
 .quiz-question-container {
   flex: 1;
-  padding: 5rem;
+  /* padding: 5rem; */
   background-color: #FBFFE2;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.quiz-question-container  div{
+  padding: 5rem;
 }
 
 .question-number {
@@ -355,35 +394,38 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #FBFFE2;
 }
 
 .home_padding {
   padding: 5rem;
   text-align: center;
-  color: #232323;
+  color: #9EA864;
 }
 
 .main_btn {
-  background-color: rgba(0, 0, 0, 0.516);
+  border: 1px solid #E8EFBC;
+  background-color: #C2CB8F;
   color: beige;
   padding: 10px 20px;
   border: 0;
 }
 
 .main_btn:hover {
-  background-color: rgba(0, 0, 0, 0.745);
+  background-color: #9EA864;
   cursor: pointer;
 }
 
 .secondary_btn {
-  color: #232323;
+  border: 1px solid #E8EFBC;
+  background-color: beige;
+  color: #C2CB8F;
   padding: 10px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.516);
   margin-left: 10px;
 }
 
 .secondary_btn:hover {
-  background-color: rgba(0, 0, 0, 0.745);
-  cursor: pointer;
+  background-color: #9EA864;
   color: beige;
+  cursor: pointer;
 }

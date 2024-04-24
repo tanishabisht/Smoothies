@@ -47,8 +47,10 @@ const QuizPage = () => {
     return (
         <div className='quiz-container'>
             <div className='quiz-question-container'>
-                <h1 className='question-number'>Question {id}</h1>
-                <p className='question'>{questionData.question}</p>
+                <div>
+                    <h1 className='question-number'>Question {id}</h1>
+                    <p className='question'>{questionData.question}</p>
+                </div>
             </div>
 
             <div className='quiz-options-container'>
