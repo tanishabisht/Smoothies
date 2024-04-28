@@ -1,4 +1,4 @@
-const quiz = [
+const quizData = [
     {
         "question": "What is a key nutritional benefit of Greek yogurt that makes it stand out from regular yogurt?",
         "options": [
@@ -51,4 +51,4 @@ const quiz = [
     }
 ]
 
-export default quiz
+export default quizData

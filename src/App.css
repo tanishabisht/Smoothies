@@ -4,7 +4,44 @@ body {
   color: #ED5F75;
 }
 
-/* Main Page */
+/* ############ */
+/* ## NAVBAR ## */
+/* ############ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-menu {
+  font-size: 1.5rem;
+  color: #ED5F75;
+  text-decoration: none;
+  font-weight: 100;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-menu::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ED5F75;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar-menu:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* ############### */
+/* ## Main Page ## */
+/* ############### */
+
 .fitblend-home {
   background-image: url(./images/bg-main.png);
   height: 100vh;
@@ -14,27 +51,15 @@ body {
   padding: 5rem;
 }
 
-.fitblend-navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.fitblend-menu {
-  font-size: 1.2rem;
-  color: #ED5F75;
-  text-decoration: none;
-}
-
-.fitblend-menu:hover {
-  text-decoration: underline;
-}
-
 .home-content {
   text-align: center;
   height: calc(100vh - 14rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50rem;
+  max-width: 100%;
+  margin: auto;
 }
 
 .home-heading {
@@ -51,7 +76,6 @@ body {
 .smoothie-gallery {
   display: flex;
   justify-content: space-around;
-  margin: 0 15rem;
 }
 
 .smoothie-image {
@@ -59,6 +83,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .smoothie-image img {
@@ -72,7 +97,28 @@ body {
   transform: scale(1.1);
 }
 
-/* SMOOTHIE PAGE */
+.smoothie-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translateY(100%);
+}
+
+.smoothie-image:hover .smoothie-name {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ################### */
+/* ## SMOOTHIE PAGE ## */
+/* ################### */
 
 .smoothie-container {
   background-image: url(./images/bg-smoothie1.png);
@@ -325,50 +371,6 @@ hr {
 
 
 
-
-/* NAV */
-
-.nav {
-  background-color: #6c6c6c;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav_logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.nav a:hover {
-  color: #9EA864;
-  text-decoration: none;
-  margin-right: 10px;
-  background-color: beige;
-}
-
-.nav_button {
-  background-color: #4CAF50;
-  padding: 8px 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-}
-
-/* Layout */
-.layoutContainer {
-  height: 94vh;
-}
-
 /* Smoothis Lessons Page */
 
 
@@ -452,6 +454,10 @@ hr {
   width: 100%;
 }
 
+/* ################# */
+/* ## NEXT BUTTON ## */
+/* ################# */
+
 .button-right {
   position: absolute;
   bottom: 10px;
@@ -476,26 +482,9 @@ hr {
   width: 6rem;
 }
 
-/* Quiz */
-
-/* .quiz-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #E8EFBC;
-  height: 100%;
-} */
-
-
-/* Home Page */
-/* .home_container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #FBFFE2;
-} */
+/* ########## */
+/* ## QUIZ ## */
+/* ########## */
 
 .home_padding {
   padding: 5rem;
