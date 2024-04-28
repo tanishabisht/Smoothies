@@ -1,7 +1,79 @@
 body {
-  font-family: "EB Garamond", serif;
   margin: 0;
+  font-family: "Marmelad", sans-serif;
+  color: #ED5F75;
 }
+
+/* font-family: "Manrope", sans-serif; */
+
+/* Main Page */
+.fitblend-home {
+  background-image: url(./images/bg-main.png);
+  height: 100vh;
+}
+
+.fitblend-padding {
+  padding: 5rem;
+}
+
+.fitblend-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fitblend-menu {
+  font-size: 1.2rem;
+  color: #ED5F75;
+  text-decoration: none;
+}
+
+.fitblend-menu:hover {
+  text-decoration: underline;
+}
+
+.home-content {
+  text-align: center;
+  height: calc(100vh - 14rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-heading {
+  font-size: 3rem;
+}
+
+.home-description {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+.smoothie-gallery {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 15rem;
+}
+
+.smoothie-image {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.smoothie-image img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.smoothie-image:hover img {
+  transform: scale(1.1);
+}
+
 
 /* Navbar */
 /* .nav {
@@ -88,112 +160,167 @@ body {
   flex: 1;
 }
 
-.smoothie-id-1{
+.smoothie-id-1 {
   background-color: #F1D0D7;
+
   .smoothie-title {
     color: #B59198;
   }
+
   .smoothie-content {
     color: #B59198;
   }
+
   .ingredient-detail:nth-child(1) {
     background-color: #D2A9B1;
-  }.ingredient-detail:nth-child(2) {
+  }
+
+  .ingredient-detail:nth-child(2) {
     background-color: #B59198;
-  }.ingredient-detail:nth-child(3) {
+  }
+
+  .ingredient-detail:nth-child(3) {
     background-color: #FFEFF3;
-    .ingredient-detail-name, .ingredient-detail-amount{
+
+    .ingredient-detail-name,
+    .ingredient-detail-amount {
       color: #B59198;
     }
-  }.ingredient-detail:nth-child(4) {
+  }
+
+  .ingredient-detail:nth-child(4) {
     background-color: #D2A9B1;
   }
 }
 
-.smoothie-id-2{
+.smoothie-id-2 {
   background-color: #F9E2C4;
+
   .smoothie-title {
     color: #B09166;
   }
+
   .smoothie-content {
     color: #B09166;
   }
+
   .ingredient-detail:nth-child(1) {
     background-color: #CFB086;
-  }.ingredient-detail:nth-child(2) {
+  }
+
+  .ingredient-detail:nth-child(2) {
     background-color: #B09166;
-  }.ingredient-detail:nth-child(3) {
+  }
+
+  .ingredient-detail:nth-child(3) {
     background-color: #FFF1DF;
-    .ingredient-detail-name, .ingredient-detail-amount{
+
+    .ingredient-detail-name,
+    .ingredient-detail-amount {
       color: #B09166;
     }
-  }.ingredient-detail:nth-child(4) {
+  }
+
+  .ingredient-detail:nth-child(4) {
     background-color: #CFB086;
   }
 }
 
-.smoothie-id-3{
+.smoothie-id-3 {
   background-color: #F1D0D7;
+
   .smoothie-title {
     color: #B59198;
   }
+
   .smoothie-content {
     color: #B59198;
   }
+
   .ingredient-detail:nth-child(1) {
     background-color: #D2A9B1;
-  }.ingredient-detail:nth-child(2) {
+  }
+
+  .ingredient-detail:nth-child(2) {
     background-color: #B59198;
-  }.ingredient-detail:nth-child(3) {
+  }
+
+  .ingredient-detail:nth-child(3) {
     background-color: #FFEFF3;
-    .ingredient-detail-name, .ingredient-detail-amount{
+
+    .ingredient-detail-name,
+    .ingredient-detail-amount {
       color: #B59198;
     }
-  }.ingredient-detail:nth-child(4) {
+  }
+
+  .ingredient-detail:nth-child(4) {
     background-color: #D2A9B1;
   }
 }
 
-.smoothie-id-4{
+.smoothie-id-4 {
   background-color: #F9E2C4;
+
   .smoothie-title {
     color: #B09166;
   }
+
   .smoothie-content {
     color: #B09166;
   }
+
   .ingredient-detail:nth-child(1) {
     background-color: #CFB086;
-  }.ingredient-detail:nth-child(2) {
+  }
+
+  .ingredient-detail:nth-child(2) {
     background-color: #B09166;
-  }.ingredient-detail:nth-child(3) {
+  }
+
+  .ingredient-detail:nth-child(3) {
     background-color: #FFF1DF;
-    .ingredient-detail-name, .ingredient-detail-amount{
+
+    .ingredient-detail-name,
+    .ingredient-detail-amount {
       color: #B09166;
     }
-  }.ingredient-detail:nth-child(4) {
+  }
+
+  .ingredient-detail:nth-child(4) {
     background-color: #CFB086;
   }
 }
 
-.smoothie-id-5{
+.smoothie-id-5 {
   background-color: #FFCD4E;
+
   .smoothie-title {
     color: #B38D2B;
   }
+
   .smoothie-content {
     color: #B38D2B;
   }
+
   .ingredient-detail:nth-child(1) {
     background-color: #DBA825;
-  }.ingredient-detail:nth-child(2) {
+  }
+
+  .ingredient-detail:nth-child(2) {
     background-color: #B38D2B;
-  }.ingredient-detail:nth-child(3) {
+  }
+
+  .ingredient-detail:nth-child(3) {
     background-color: #FFE8AC;
-    .ingredient-detail-name, .ingredient-detail-amount{
+
+    .ingredient-detail-name,
+    .ingredient-detail-amount {
       color: #B38D2B;
     }
-  }.ingredient-detail:nth-child(4) {
+  }
+
+  .ingredient-detail:nth-child(4) {
     background-color: #DBA825;
   }
 }
@@ -314,7 +441,7 @@ body {
   flex-direction: column;
 }
 
-.quiz-question-container  div{
+.quiz-question-container div {
   padding: 5rem;
 }
 
@@ -395,14 +522,14 @@ body {
 }
 
 /* Home Page */
-.home_container {
+/* .home_container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #FBFFE2;
-}
+} */
 
 .home_padding {
   padding: 5rem;

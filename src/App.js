@@ -7,14 +7,12 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/lesson/:id" element={<LessonPage />} />
-          <Route path="/quiz/:id" element={<QuizPage />} />
-          <Route path="/quizresult" element={<QuizResultPage />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/lesson/:id" element={<LessonPage />} />
+        <Route path="/quiz/:id" element={<QuizPage />} />
+        <Route path="/quizresult" element={<QuizResultPage />} />
+      </Routes>
     </Router>
   );
 }
