@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Carousel } from '../components'
-import smoothiesData from '../data/smoothiesData'
 
 const ingredientData = [
     { name: 'PEANUT BUTTER', amount: '1 tablespoon' },
@@ -9,12 +7,6 @@ const ingredientData = [
     { name: 'FLAX SEEDS', amount: '1 tablespoon' },
     { name: 'MILK', amount: '1 cup' },
 ]
-
-const ingredientFunfact = [
-    "Welcome to FitBlend - Start your journey towards a healthier lifestyle!",
-    "Discover Delicious Protein Smoothies - Power your day with our recipes.",
-    "Join Our Community - Connect, share, and learn more about healthy living."
-];
 
 const ingredientFunfacts = [
     { number: '01', name: 'PEANUT BUTTER', desc: 'It takes about 540 peanuts to mttle more info.' },
@@ -25,11 +17,23 @@ const ingredientFunfacts = [
 
 const LessonPage = () => {
 
+    const navigate = useNavigate();
+
     const { id } = useParams();
+    const lessonNumber = parseInt(id, 10);
+
     const [activeIndex, setActiveIndex] = useState(0);
 
     const handleDotClick = (index) => {
         setActiveIndex(index);
+    };
+
+    const goToNextLesson = () => {
+        if (lessonNumber < 5) {
+            navigate(`/lesson/${lessonNumber + 1}`);
+        } else {
+            navigate(`/quiz/1`);
+        }
     };
 
     return (
@@ -48,7 +52,7 @@ const LessonPage = () => {
                     <p className='ingredient-desc'>{ingredientFunfacts[activeIndex]['desc']}</p>
                 </div>
                 <div className="carousel-dots">
-                    {ingredientFunfact.map((_, index) => (
+                    {ingredientFunfacts.map((_, index) => (
                         <span
                             key={index}
                             className={`dot${activeIndex === index ? ' active' : ''}`}
@@ -66,6 +70,18 @@ const LessonPage = () => {
                     </div>
                 ))}
             </div>
+
+            {lessonNumber < 5 ? (
+                <button className='button-right' onClick={goToNextLesson}>
+                    <span className="material-symbols-outlined">
+                        arrow_right_alt
+                    </span>
+                </button>
+            ) : (
+                <button className='button-right' onClick={() => navigate('/quiz/1')}>
+                    Quiz Me
+                </button>
+            )}
 
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { MainPage, SmoothiePage, LessonPage, QuizPage, QuizResultPage } from './pages'
+import { MainPage, SmoothiePage, QuizPage, QuizResultPage } from './pages'
 import { Layout } from './components'
 import './App.css';
 
@@ -10,8 +10,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/smoothie/:id" element={<SmoothiePage />} />
-
-        <Route path="/lesson/:id" element={<LessonPage />} />
         <Route path="/quiz/:id" element={<QuizPage />} />
         <Route path="/quizresult" element={<QuizResultPage />} />
       </Routes>

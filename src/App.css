@@ -191,6 +191,139 @@ hr {
   z-index: 100;
 }
 
+/* Quiz Page */
+
+.quiz-container {
+  background-image: url(./images/bg-questions.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Manrope", sans-serif;
+}
+
+.quiz-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-family: "Marmelad", sans-serif;
+}
+
+.quiz-menu {
+  font-size: 1.5rem;
+  color: #ED5F75;
+  text-decoration: none;
+}
+
+.quiz-menu:hover {
+  text-decoration: underline;
+}
+
+.quiz-content {
+  height: calc(100vh - 3.8rem);
+  display: flex;
+}
+
+.quiz-left {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quiz-right {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-left-padding {
+  padding: 8rem;
+}
+
+.que-number {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.que {
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.quiz-option {
+  background-color: #FCEFE5;
+  color: rgb(70, 70, 63);
+  border: 0px;
+  width: 70%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.quiz-option:hover {
+  background-color: #ffd1cb;
+  cursor: pointer;
+}
+
+.quiz-option:focus {
+  background-color: #ECB6AF;
+  border: 1px solid #BC695E;
+}
+
+.check-button {
+  border: 1px solid #BC695E;
+  background-color: #FCEFE5;
+  color: #BC695E;
+  padding: 10px 20px;
+  width: 70%;
+  margin-top: 5rem;
+  font-weight: 800;
+}
+
+.check-button:hover {
+  background: #BC695E;
+  color: beige;
+  cursor: pointer;
+}
+
+
+
+.next {
+  border: 2px solid rgb(87, 162, 62);
+  color: rgb(87, 162, 62);
+}
+
+.wrong-outline {
+  border: 1px solid rgb(251, 103, 103);
+}
+
+.error-text {
+  color: #BC695E;
+  font-size: 15px;
+}
+
+.correct-outline {
+  border: 2px solid rgb(87, 162, 62);
+}
+
+.success-text {
+  color: rgb(87, 162, 62);
+  font-size: 15px;
+}
+
+
+
+
+
+
+
 
 
 /* NAV */
@@ -245,171 +378,6 @@ hr {
   justify-content: space-between;
   height: 100%;
   flex: 1;
-}
-
-.smoothie-id-1 {
-  background-color: #F1D0D7;
-
-  .smoothie-title {
-    color: #B59198;
-  }
-
-  .smoothie-content {
-    color: #B59198;
-  }
-
-  .ingredient-detail:nth-child(1) {
-    background-color: #D2A9B1;
-  }
-
-  .ingredient-detail:nth-child(2) {
-    background-color: #B59198;
-  }
-
-  .ingredient-detail:nth-child(3) {
-    background-color: #FFEFF3;
-
-    .ingredient-detail-name,
-    .ingredient-detail-amount {
-      color: #B59198;
-    }
-  }
-
-  .ingredient-detail:nth-child(4) {
-    background-color: #D2A9B1;
-  }
-}
-
-.smoothie-id-2 {
-  background-color: #F9E2C4;
-
-  .smoothie-title {
-    color: #B09166;
-  }
-
-  .smoothie-content {
-    color: #B09166;
-  }
-
-  .ingredient-detail:nth-child(1) {
-    background-color: #CFB086;
-  }
-
-  .ingredient-detail:nth-child(2) {
-    background-color: #B09166;
-  }
-
-  .ingredient-detail:nth-child(3) {
-    background-color: #FFF1DF;
-
-    .ingredient-detail-name,
-    .ingredient-detail-amount {
-      color: #B09166;
-    }
-  }
-
-  .ingredient-detail:nth-child(4) {
-    background-color: #CFB086;
-  }
-}
-
-.smoothie-id-3 {
-  background-color: #F1D0D7;
-
-  .smoothie-title {
-    color: #B59198;
-  }
-
-  .smoothie-content {
-    color: #B59198;
-  }
-
-  .ingredient-detail:nth-child(1) {
-    background-color: #D2A9B1;
-  }
-
-  .ingredient-detail:nth-child(2) {
-    background-color: #B59198;
-  }
-
-  .ingredient-detail:nth-child(3) {
-    background-color: #FFEFF3;
-
-    .ingredient-detail-name,
-    .ingredient-detail-amount {
-      color: #B59198;
-    }
-  }
-
-  .ingredient-detail:nth-child(4) {
-    background-color: #D2A9B1;
-  }
-}
-
-.smoothie-id-4 {
-  background-color: #F9E2C4;
-
-  .smoothie-title {
-    color: #B09166;
-  }
-
-  .smoothie-content {
-    color: #B09166;
-  }
-
-  .ingredient-detail:nth-child(1) {
-    background-color: #CFB086;
-  }
-
-  .ingredient-detail:nth-child(2) {
-    background-color: #B09166;
-  }
-
-  .ingredient-detail:nth-child(3) {
-    background-color: #FFF1DF;
-
-    .ingredient-detail-name,
-    .ingredient-detail-amount {
-      color: #B09166;
-    }
-  }
-
-  .ingredient-detail:nth-child(4) {
-    background-color: #CFB086;
-  }
-}
-
-.smoothie-id-5 {
-  background-color: #FFCD4E;
-
-  .smoothie-title {
-    color: #B38D2B;
-  }
-
-  .smoothie-content {
-    color: #B38D2B;
-  }
-
-  .ingredient-detail:nth-child(1) {
-    background-color: #DBA825;
-  }
-
-  .ingredient-detail:nth-child(2) {
-    background-color: #B38D2B;
-  }
-
-  .ingredient-detail:nth-child(3) {
-    background-color: #FFE8AC;
-
-    .ingredient-detail-name,
-    .ingredient-detail-amount {
-      color: #B38D2B;
-    }
-  }
-
-  .ingredient-detail:nth-child(4) {
-    background-color: #DBA825;
-  }
 }
 
 .smoothie-details {
@@ -510,103 +478,14 @@ hr {
 
 /* Quiz */
 
-.quiz-container {
+/* .quiz-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #E8EFBC;
   height: 100%;
-}
+} */
 
-.quiz-question-container {
-  flex: 1;
-  /* padding: 5rem; */
-  background-color: #FBFFE2;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.quiz-question-container div {
-  padding: 5rem;
-}
-
-.question-number {
-  color: #9EA864;
-}
-
-.question {
-  color: #9EA864;
-}
-
-.quiz-options-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.quiz-option {
-  background-color: #C2CB8F;
-  font-family: "EB Garamond", serif;
-  color: rgb(70, 70, 63);
-  border: 0px;
-  width: 70%;
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  text-align: left;
-}
-
-.quiz-option:hover {
-  background-color: beige;
-  cursor: pointer;
-}
-
-.quiz-option:focus {
-  background-color: beige;
-}
-
-.check-button {
-  border: 1px solid #C2CB8F;
-  background-color: beige;
-  color: #9EA864;
-  padding: 10px 20px;
-  width: 70%;
-  margin-top: 5rem;
-  font-weight: 800;
-}
-
-.check-button:hover {
-  background: #9EA864;
-  color: beige;
-  cursor: pointer;
-}
-
-.next {
-  border: 2px solid rgb(87, 162, 62);
-  color: rgb(87, 162, 62);
-}
-
-.wrong-outline {
-  border: 1px solid rgb(251, 103, 103);
-}
-
-.error-text {
-  color: rgb(251, 103, 103);
-  font-size: 15px;
-}
-
-.correct-outline {
-  border: 2px solid rgb(87, 162, 62);
-}
-
-.success-text {
-  color: rgb(87, 162, 62);
-  font-size: 15px;
-}
 
 /* Home Page */
 /* .home_container {
