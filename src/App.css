@@ -4,8 +4,6 @@ body {
   color: #ED5F75;
 }
 
-/* font-family: "Manrope", sans-serif; */
-
 /* Main Page */
 .fitblend-home {
   background-image: url(./images/bg-main.png);
@@ -74,32 +72,128 @@ body {
   transform: scale(1.1);
 }
 
+/* SMOOTHIE PAGE */
 
-/* Navbar */
-/* .nav {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 100%;
+.smoothie-container {
+  background-image: url(./images/bg-smoothie1.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.smoothie-navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  color: #7A7A7A;
 }
 
-.nav_button {
+hr {
+  border: 0;
+  height: 0;
+  border-top: 2px solid #7A7A7A;
+  width: 97%;
+}
+
+.ingredients-data {
   position: absolute;
-  top: 5px;
-  right: 20px;
-  background-color: rgba(0, 0, 0, 0.516);
-  color: beige;
-  padding: 5px 10px;
-  text-decoration: none;
+  bottom: 5rem;
+  left: 5rem;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  color: #7A7A7A;
 }
 
-.nav_button:hover {
-  background-color: rgba(0, 0, 0, 0.745);
+.ingredient {
+  border-right: 2px solid #7A7A7A;
+  padding: 1rem;
+  text-align: center;
+}
+
+.ingredient:last-child {
+  border: 0px;
+}
+
+.ingredient-name {
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #616161;
+}
+
+.ingredient-amount {
+  margin: 0;
+}
+
+.ingredients-funfact {
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+  background-color: #ffffff6e;
+  color: #7A7A7A;
+  padding: 3rem;
+  width: 40rem;
+  padding-left: 7rem;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ffffff6e;
+  border-radius: 50%;
+  display: inline-block;
   cursor: pointer;
-} */
+}
+
+.dot:hover {
+  background-color: #ffffffe6;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+.ingredient-number {
+  position: absolute;
+  top: 0rem;
+  left: 1.5rem;
+  font-size: 10rem;
+  color: #F7CDC7;
+  z-index: 0;
+}
+
+.ingredient-title {
+  font-size: 3.5rem;
+  color: #616161;
+  position: relative;
+  z-index: 100;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ingredient-desc {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  position: relative;
+  margin: 0;
+  z-index: 100;
+}
+
+
+
+/* NAV */
 
 .nav {
   background-color: #6c6c6c;
@@ -144,13 +238,6 @@ body {
 
 /* Smoothis Lessons Page */
 
-.smoothie-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #F9F9F9;
-  height: 100%;
-}
 
 .smoothie-content-container {
   display: flex;
