@@ -7,7 +7,7 @@ const QuizResultPage = () => {
     const navigate = useNavigate();
 
     const onClickLearnBtn = () => {
-        navigate(`/lesson/1`);
+        navigate(`/smoothie/1`);
     }
 
     const onClickQuizBtn = () => {
@@ -45,7 +45,7 @@ const QuizResultPage = () => {
                     )}
 
                     <div className='btn-container'>
-                        <button className='btn-main' onClick={onClickLearnBtn}>Teach Me</button>
+                        <button className='btn-main' onClick={onClickLearnBtn}>Learn Again</button>
                         <button className='btn-secondary' onClick={onClickQuizBtn}>Quiz Me Again</button>
                     </div>
 

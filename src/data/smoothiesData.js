@@ -13,7 +13,7 @@ const smoothiesData = [
                 "number": "01",
                 "name": "Greek yogurt",
                 "amount": "1 cup",
-                "fact": "Greek yogurt contains almost twice the protein of regular yogurt."
+                "fact": "Greek yogurt contains almost <u>twice the protein</u> of regular yogurt."
             },
             {
                 "number": "02",

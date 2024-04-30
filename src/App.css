@@ -276,6 +276,13 @@ hr {
   animation-timing-function: ease-out;
 }
 
+.funfact-desc u {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-style: solid;
+  text-underline-offset: 5px;
+}
+
 @keyframes slideInRightDesc {
   from {
     opacity: 0;

@@ -49,7 +49,7 @@ const LessonPage = () => {
                 <div className='funfact-details' key={funfactIndex}>
                     <span className='funfact-number' style={{ color: smoothie.color }}>{smoothie.ingredients[funfactIndex]['number']}</span>
                     <h1 className='funfact-title'>{smoothie.ingredients[funfactIndex]['name']}</h1>
-                    <p className='funfact-desc'>{smoothie.ingredients[funfactIndex]['fact']}</p>
+                    <p className='funfact-desc' dangerouslySetInnerHTML={{ __html: smoothie.ingredients[funfactIndex]['fact'] }}></p>
                 </div>
                 <div className="funfact-navigation">
                     {smoothie.ingredients.map((_, index) => (
