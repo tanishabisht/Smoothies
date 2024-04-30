@@ -1,9 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { Navbar } from '../components'
 
 const QuizResultPage = () => {
     const { score } = useParams();
+    const navigate = useNavigate();
+
+    const onClickLearnBtn = () => {
+        navigate(`/lesson/1`);
+    }
+
+    const onClickQuizBtn = () => {
+        navigate(`/quiz/1`);
+    }
 
     return (
         <div className='home-container'>
@@ -13,8 +22,33 @@ const QuizResultPage = () => {
                     <div className='score-container'>
                         <div className='score'>{score} / 5</div>
                     </div>
-                    <h1 className='home-heading'>Congratulationsss</h1>
-                    <h2 className='home-description'>You now know Protein Power Ingredients for your smoothie!</h2>
+
+                    {score < 3 && (
+                        <>
+                            <h1 className='home-heading'>Good Try!</h1>
+                            <h2 className='home-description'>You're getting there. Keep practicing to learn more about Protein Power Ingredients for your smoothie!</h2>
+                        </>
+                    )}
+
+                    {score == 3 && (
+                        <>
+                            <h1 className='home-heading'>Congratulations!</h1>
+                            <h2 className='home-description'>You know the basics of Protein Power Ingredients for your smoothie!</h2>
+                        </>
+                    )}
+
+                    {score > 3 && (
+                        <>
+                            <h1 className='home-heading'>Outstanding Performance!</h1>
+                            <h2 className='home-description'>You're a master of Protein Power Ingredients for your smoothie!</h2>
+                        </>
+                    )}
+
+                    <div className='btn-container'>
+                        <button className='btn-main' onClick={onClickLearnBtn}>Teach Me</button>
+                        <button className='btn-secondary' onClick={onClickQuizBtn}>Quiz Me Again</button>
+                    </div>
+
                 </div>
             </div>
         </div>

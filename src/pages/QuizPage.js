@@ -43,9 +43,6 @@ const QuizPage = () => {
     const handleNextQuestion = () => {
         let nextId = questionNumber + 1;
         if (nextId <= quizQuestions.length) {
-            if (selected === quizQuestions[questionNumber - 1].answer) {
-                setScore(prevScore => prevScore + 1);
-            }
             navigate(`/quiz/${nextId}`);
         } else {
             navigate(`/results/${score}`);

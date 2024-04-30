@@ -572,3 +572,36 @@ hr {
   color: #fff;
   padding: 1rem 3rem;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-main {
+  background-color: #ECB6AF;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ECB6AF;
+  font-size: 1.2rem;
+}
+
+.btn-main:hover {
+  background-color: #BC695E;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 1px solid #BC695E;
+  background-color: #fff;
+  color: #BC695E;
+  font-size: 1.2rem;
+}
+
+.btn-secondary:hover {
+  background-color: #BC695E;
+  color: beige;
+  cursor: pointer;
+}
