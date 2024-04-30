@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import quizQuestions from '../data/quizData';
+import { Navbar } from '../components'
 
 const QuizPage = () => {
     const navigate = useNavigate();
@@ -46,10 +47,8 @@ const QuizPage = () => {
 
     return (
         <div className='quiz-container'>
-            <div className='quiz-navbar'>
-                <Link className='quiz-menu' to="/">FitBlend</Link>
-                <Link className='quiz-menu' to="/quiz/1">Take Quiz</Link>
-            </div>
+
+            <Navbar />
 
             <div className='quiz-content'>
                 <div className='quiz-left'>
