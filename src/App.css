@@ -95,16 +95,16 @@ hr {
 /* ## Main Page ## */
 /* ############### */
 
-.fitblend-home {
+.home-container {
   background-image: url(./images/bg-main.png);
   height: 100vh;
 }
 
-.fitblend-padding {
+.home-padding {
   padding: 5rem;
 }
 
-.home-content {
+.content-wrapper {
   text-align: center;
   height: calc(100vh - 14rem);
   display: flex;
@@ -126,12 +126,12 @@ hr {
   margin-bottom: 5rem;
 }
 
-.smoothie-gallery {
+.gallery {
   display: flex;
   justify-content: space-around;
 }
 
-.smoothie-image {
+.gallery-item {
   overflow: hidden;
   display: block;
   width: 100%;
@@ -139,18 +139,18 @@ hr {
   position: relative;
 }
 
-.smoothie-image img {
+.gallery-item img {
   transition: transform 0.3s ease;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.smoothie-image:hover img {
+.gallery-item:hover img {
   transform: scale(1.1);
 }
 
-.smoothie-name {
+.item-caption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -163,7 +163,7 @@ hr {
   transform: translateY(100%);
 }
 
-.smoothie-image:hover .smoothie-name {
+.gallery-item:hover .item-caption {
   opacity: 1;
   transform: translateY(0);
 }
@@ -501,77 +501,9 @@ hr {
   font-size: 15px;
 }
 
-
-
-
-
-
-
-
-/* Smoothis Lessons Page */
-
-
-.smoothie-content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  flex: 1;
-}
-
-.smoothie-details {
-  padding: 5rem;
-}
-
-.smoothie-title {
-  font-family: "Coustard", serif;
-  font-size: 48px;
-  color: #232323;
-  margin-bottom: 20px;
-}
-
-.smoothie-content {
-  font-family: "Crete Round", serif;
-  color: #232323;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.smoothie-drinking-time {
-  color: #232323;
-  font-style: italic;
-  margin-bottom: 30px;
-}
-
-.smoothie-ingredient-funfact {
-  background-color: #DCDCDC;
-  border: 1px solid #b9b9b9;
-  padding: 0.5rem;
-}
-
-.smoothie-ingredients {
-  color: #232323;
-  display: flex;
-}
-
-.smoothie-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  flex: 1;
-}
-
-.smoothie-image-container img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
-/* ########## */
-/* ## QUIZ ## */
-/* ########## */
+/* ################# */
+/* ## QUIZ RESULT ## */
+/* ################# */
 
 .home_padding {
   padding: 5rem;
