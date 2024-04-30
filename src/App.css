@@ -38,6 +38,58 @@ body {
   left: 0;
 }
 
+/* ##################### */
+/* ## SMOOTHIE NAVBAR ## */
+/* ##################### */
+
+.smoothie-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  color: #7A7A7A;
+  padding: 1rem 2rem;
+}
+
+.smoothie-menu,
+.smoothie-menu-no-underline {
+  color: #7A7A7A;
+  text-decoration: none;
+  margin: 0;
+  font-weight: 100;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.8s ease;
+}
+
+.smoothie-menu:hover {
+  color: #ED5F75;
+}
+
+.smoothie-menu::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ED5F75;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.smoothie-menu:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 2px solid #818080;
+  width: 97%;
+  margin: 0 1rem;
+}
+
 /* ############### */
 /* ## Main Page ## */
 /* ############### */
@@ -126,21 +178,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.smoothie-navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-  font-size: 1.2rem;
-  color: #7A7A7A;
-}
-
-hr {
-  border: 0;
-  height: 0;
-  border-top: 2px solid #7A7A7A;
-  width: 97%;
 }
 
 .ingredients-data {

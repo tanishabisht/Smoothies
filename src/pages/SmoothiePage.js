@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { SmoothiesNavbar } from '../components'
+import smoothiesData from '../data/smoothiesData'
 
 const ingredientData = [
     { name: 'PEANUT BUTTER', amount: '1 tablespoon' },
@@ -15,12 +17,19 @@ const ingredientFunfacts = [
     { number: '04', name: 'MILK', desc: 'It take jar of peanut butter. And little more info.' },
 ];
 
+const getSmoothieNameById = (smoothies, id) => {
+    const smoothie = smoothies.find(smoothie => smoothie.id === id);
+    return smoothie ? smoothie.name : 'Smoothie not found';
+}
+
 const LessonPage = () => {
 
     const navigate = useNavigate();
 
     const { id } = useParams();
-    const lessonNumber = parseInt(id, 10);
+    const smoothieNumber = parseInt(id, 10);
+    const [smoothieName, setSmoothieName] = useState(getSmoothieNameById(smoothiesData, smoothieNumber));
+
 
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -28,9 +37,9 @@ const LessonPage = () => {
         setActiveIndex(index);
     };
 
-    const goToNextLesson = () => {
-        if (lessonNumber < 5) {
-            navigate(`/lesson/${lessonNumber + 1}`);
+    const goToNextSmoothie = () => {
+        if (smoothieNumber < 5) {
+            navigate(`/lesson/${smoothieNumber + 1}`);
         } else {
             navigate(`/quiz/1`);
         }
@@ -38,11 +47,11 @@ const LessonPage = () => {
 
     return (
         <div className='smoothie-container'>
-            <div className='smoothie-navbar'>
-                <p>FITBLEND</p>
-                <p>01 / 03 PEACH SMOOTHIE</p>
-                <p>QUIZ ME</p>
-            </div>
+
+            <SmoothiesNavbar id={id} smoothieName={smoothieName} />
+
+
+
             <hr />
 
             <div className="ingredients-funfact">
@@ -71,8 +80,8 @@ const LessonPage = () => {
                 ))}
             </div>
 
-            {lessonNumber < 5 ? (
-                <button className='button-right' onClick={goToNextLesson}>
+            {smoothieNumber < 5 ? (
+                <button className='button-right' onClick={goToNextSmoothie}>
                     <span className="material-symbols-outlined">
                         arrow_right_alt
                     </span>

@@ -9,11 +9,12 @@ const HomePage = () => {
     return (
         <div className='fitblend-home'>
             <div className='fitblend-padding'>
+
                 <Navbar />
 
                 <div className='home-content'>
                     <h1 className='home-heading'>FitBlend</h1>
-                    <h2 className='home-description'>Unlock the secret to a healthier lifestyle with FitBlend, your ultimate destination for protein-rich smoothies.</h2>
+                    <h2 className='home-description'>Unlock the secret to a healthier lifestyle with FitBlend, your ultimate destination for <u>protein-rich smoothies</u>.</h2>
                     <div className='smoothie-gallery'>
                         <Link className='smoothie-image' to='/smoothie/1'>
                             <img src={Smoothie1} alt='Greek Yogurt Smoothie' />
