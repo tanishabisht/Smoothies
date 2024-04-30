@@ -7,7 +7,7 @@ const quizData = [
             "Almost double the protein content",
             "More lactose"
         ],
-        "answer": "3"
+        "answer": 2
     },
     {
         "question": "Silken tofu is praised for its ability to add what nutritional benefits to smoothies without altering texture?",
@@ -17,7 +17,7 @@ const quizData = [
             "Vitamins and minerals",
             "Protein and calcium"
         ],
-        "answer": "4"
+        "answer": 3
     },
     {
         "question": "Which complete protein source contains all nine essential amino acids?",
@@ -27,7 +27,7 @@ const quizData = [
             "Peanut butter",
             "Cottage cheese"
         ],
-        "answer": "2"
+        "answer": 1
     },
     {
         "question": "What unique property do chia seeds add to smoothies besides protein?",
@@ -37,7 +37,7 @@ const quizData = [
             "Thickening effect",
             "Cooling effect"
         ],
-        "answer": "3"
+        "answer": 2
     },
     {
         "question": "What type of protein is cottage cheese particularly rich in, making it beneficial for muscle maintenance overnight?",
@@ -47,7 +47,7 @@ const quizData = [
             "Soy protein",
             "Hydrolyzed protein"
         ],
-        "answer": "2"
+        "answer": 1
     }
 ]
 

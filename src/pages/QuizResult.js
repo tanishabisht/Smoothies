@@ -1,25 +1,20 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom'
+import { Navbar } from '../components'
 
 const QuizResultPage = () => {
-    const navigate = useNavigate();
-
-    const onClickLearnBtn = () => {
-        navigate(`/lesson/1`);
-    }
-
-    const onClickQuizBtn = () => {
-        navigate(`/quiz/1`);
-    }
+    const { score } = useParams();
 
     return (
-        <div className='home_container'>
-            <div className='home_padding'>
-                <h1>Congratulationsss!!!</h1>
-                <h2>You now know Protein Power Ingredients for your smoothie!</h2>
-                <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                    <button className='main_btn' onClick={onClickLearnBtn}>Teach Me</button>
-                    <button className='secondary_btn' onClick={onClickQuizBtn}>Quiz Me Again</button>
+        <div className='home-container'>
+            <div className='home-padding'>
+                <Navbar />
+                <div className='content-wrapper'>
+                    <div className='score-container'>
+                        <div className='score'>{score} / 5</div>
+                    </div>
+                    <h1 className='home-heading'>Congratulationsss</h1>
+                    <h2 className='home-description'>You now know Protein Power Ingredients for your smoothie!</h2>
                 </div>
             </div>
         </div>

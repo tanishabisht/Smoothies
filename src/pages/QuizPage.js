@@ -1,48 +1,44 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import quizQuestions from '../data/quizData';
 import { Navbar } from '../components'
 
 const QuizPage = () => {
     const navigate = useNavigate();
     const { id } = useParams();
+    const questionNumber = parseInt(id, 10)
 
-    const [questionData, setQuestionData] = useState(null);
-    const [selectedOption, setSelectedOption] = useState(null);
-    const [isCorrect, setIsCorrect] = useState(null);
+    const [currentQuestion, setCurrentQuestion] = useState(null);
+    const [selected, setSelected] = useState(null);
+    const [score, setScore] = useState(0);
 
     useEffect(() => {
-        const questionIndex = parseInt(id, 10) - 1;
-        if (questionIndex >= 0 && questionIndex < quizQuestions.length) {
-            setQuestionData(quizQuestions[questionIndex]);
-            setIsCorrect(null);
-            setSelectedOption(null);
+        const index = questionNumber - 1;
+        if (index >= 0 && index < quizQuestions.length) {
+            setCurrentQuestion(quizQuestions[index]);
+            setSelected(null);
         }
     }, [id]);
 
-    const handleOptionClick = (option, index) => {
-        setSelectedOption(index);
-        setIsCorrect(null);
+    const handleOptionSelect = (index) => {
+        console.log(index, quizQuestions[questionNumber - 1].answer);
+        setSelected(index);
     };
 
-    const checkAnswer = () => {
-        if (selectedOption !== null) {
-            const correctAnswer = questionData.answer;
-            setIsCorrect(selectedOption === parseInt(correctAnswer, 10) - 1);
-        }
-    };
-
-    const goToNextQuestion = () => {
-        let nextId = parseInt(id, 10) + 1;
+    const handleNextQuestion = () => {
+        let nextId = questionNumber + 1;
         if (nextId <= quizQuestions.length) {
+            if (selected === quizQuestions[questionNumber - 1].answer) {
+                setScore(prevScore => prevScore + 1);
+            }
             navigate(`/quiz/${nextId}`);
         } else {
-            navigate('/quizresult');
+            navigate(`/results/${score}`);
         }
     };
 
-    if (!questionData) {
-        return <div>No question found for this ID.</div>;
+    if (!currentQuestion) {
+        return <div>No question available for this ID.</div>;
     }
 
     return (
@@ -51,37 +47,23 @@ const QuizPage = () => {
             <Navbar />
 
             <div className='quiz-content'>
+
                 <div className='quiz-left'>
                     <div className='quiz-left-padding'>
                         <h1 className='que-number'>Question {id}</h1>
                         <p className='que'>What is a key nutritional benefit of Greek yogurt that makes it stand out from regular yogurt?</p>
                     </div>
                 </div>
+
                 <div className='quiz-right'>
-                    {questionData.options.map((option, index) => (
-                        <>
-                            <button
-                                key={index}
-                                className={`quiz-option ${selectedOption === index && isCorrect ? 'correct-outline' : null}`}
-                                onClick={() => handleOptionClick(option, index)}
-                            >
-                                {option}
-                            </button>
-                            {selectedOption === index && isCorrect === false && (
-                                <div className="error-text">Incorrect, please try again.</div>
-                            )}
-                            {selectedOption === index && isCorrect && (
-                                <div className="success-text">Correct! You may proceed to the next question.</div>
-                            )}
-                        </>
+                    {currentQuestion.options.map((option, index) => (
+                        <button key={index} className='quiz-option' onClick={() => handleOptionSelect(index)}>
+                            {option}
+                        </button>
                     ))}
-                    <button
-                        className={`check-button ${isCorrect ? 'next' : ''}`}
-                        onClick={isCorrect ? goToNextQuestion : checkAnswer}
-                    >
-                        {isCorrect ? 'NEXT' : 'CHECK'}
-                    </button>
+                    <button className='next-button' onClick={handleNextQuestion}>Next</button>
                 </div>
+
             </div>
         </div>
     );

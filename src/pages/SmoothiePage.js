@@ -3,20 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { SmoothiesNavbar } from '../components'
 import smoothiesData from '../data/smoothiesData'
 
-const ingredientData = [
-    { name: 'PEANUT BUTTER', amount: '1 tablespoon' },
-    { name: 'ROLLED OATS', amount: '2 cups' },
-    { name: 'FLAX SEEDS', amount: '1 tablespoon' },
-    { name: 'MILK', amount: '1 cup' },
-]
-
-const ingredientFunfacts = [
-    { number: '01', name: 'PEANUT BUTTER', desc: 'It takes about 540 peanuts to mttle more info.' },
-    { number: '02', name: 'ROLLED OATS', desc: 'It takence jar of peanut butter. And little more info.' },
-    { number: '03', name: 'FLAX SEEDS', desc: 'It takes about 540 peanuts to make a 12-ounce jar of pe more info.' },
-    { number: '04', name: 'MILK', desc: 'It take jar of peanut butter. And little more info.' },
-];
-
 const getSmoothieById = (smoothies, id) => {
     const smoothie = smoothies.find(smoothie => smoothie.id === id);
     return smoothie ? smoothie : 'Smoothie not found';
