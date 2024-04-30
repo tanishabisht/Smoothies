@@ -71,7 +71,7 @@ const LessonPage = () => {
                 ))}
             </div>
 
-            {smoothieNumber < 5 ? (
+            {smoothieNumber < NUMBER_OF_SMOOTHIES ? (
                 <button className='next-smoothie-btn' onClick={goToNextSmoothie}>
                     <span className="material-symbols-outlined">
                         arrow_right_alt

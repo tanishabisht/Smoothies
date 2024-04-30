@@ -461,7 +461,8 @@ hr {
   border: 2px solid #BC695E;
 }
 
-.next-button {
+.next-button,
+.check-button {
   border: 1px solid #BC695E;
   background-color: #FCEFE5;
   color: #BC695E;
@@ -471,11 +472,83 @@ hr {
   font-weight: 800;
 }
 
-.next-button:hover {
+.next-button:hover,
+.check-button:hover {
   background: #BC695E;
   color: beige;
   cursor: pointer;
 }
+
+.next-button:disabled,
+.check-button:disabled {
+  background-color: #f0e6e2;
+  color: #d3bfb7;
+  cursor: default;
+  border: 1px solid #d3bfb7;
+}
+
+.next-button:disabled:hover,
+.check-button:disabled:hover {
+  background-color: #f0e6e2;
+  color: #d3bfb7;
+}
+
+.quiz-option-correct {
+  background-color: #C9CEAE;
+  border: 2px solid #9EA864;
+}
+
+.quiz-option-wrong {
+  background-color: #ECB6AF;
+  border: 2px solid #BC695E;
+}
+
+.selected {
+  border: 2px solid #666;
+}
+
+.error-text {
+  color: #ED5F75;
+}
+
+.success-text {
+  color: #9EA864;
+}
+
+.quiz-progress {
+  width: 100%;
+  height: 15px;
+  background-color: #ECB6AF;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* Chrome, Safari, Opera */
+.quiz-progress::-webkit-progress-bar {
+  background-color: #ECB6AF;
+  border-radius: 10px;
+}
+
+.quiz-progress::-webkit-progress-value {
+  background: #BC695E;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Firefox */
+.quiz-progress::-moz-progress-bar {
+  background: #BC695E;
+  border-radius: 10px;
+}
+
+/* MS Edge */
+.quiz-progress::-ms-fill {
+  background: #BC695E;
+  border-radius: 10px;
+}
+
+
 
 /* ################# */
 /* ## QUIZ RESULT ## */
