@@ -7,92 +7,94 @@ const smoothiesData = [
         "id": 1,
         "name": "Greek Yogurt Smoothie",
         "image": bgSmoothiePink,
+        "color": "#EDC8CB",
         "ingredients": [
             {
+                "number": "01",
                 "name": "Greek yogurt",
                 "amount": "1 cup",
-                "image": "",
                 "fact": "Greek yogurt contains almost twice the protein of regular yogurt."
             },
             {
-                "name": "strawberries",
+                "number": "02",
+                "name": "Strawberries",
                 "amount": "¼ cup",
-                "image": "",
                 "fact": "Strawberries are packed with vitamin C, manganese, and various antioxidants."
             },
             {
-                "name": "honey",
+                "number": "03",
+                "name": "Honey",
                 "amount": "1 tablespoon",
-                "image": "",
                 "fact": "Honey is a natural antibacterial and antifungal agent."
             },
             {
-                "name": "chia seeds",
+                "number": "04",
+                "name": "Chia seeds",
                 "amount": "1 teaspoon",
-                "image": "",
                 "fact": "Chia seeds are a great source of omega-3 fatty acids, which benefit brain health."
             }
         ]
     },
     {
-        "id": 3,
+        "id": 2,
         "name": "Silken Tofu Berry Blend",
         "image": bgSmoothiePurple,
+        "color": "#DCCBF1",
         "ingredients": [
             {
-                "name": "silken tofu",
+                "number": "01",
+                "name": "Silken tofu",
                 "amount": "½ cup",
-                "image": "",
                 "fact": "Silken tofu is made by coagulating soy milk without curdling it, providing a smooth texture ideal for smoothies."
             },
             {
-                "name": "mixed berries",
+                "number": "02",
+                "name": "Mixed berries",
                 "amount": "1 cup",
-                "image": "",
                 "fact": "Berries are among the highest antioxidant foods in the world."
             },
             {
-                "name": "almond milk",
+                "number": "03",
+                "name": "Almond milk",
                 "amount": "1 cup",
-                "image": "",
                 "fact": "Almond milk is a dairy-free milk that contains no cholesterol or lactose."
             },
             {
-                "name": "honey",
+                "number": "04",
+                "name": "Honey",
                 "amount": "1 tablespoon",
-                "image": "",
                 "fact": "Honey has been used as a sweetener for over 8,000 years."
             }
         ]
     },
     {
-        "id": 5,
+        "id": 3,
         "name": "Cottage Cheese Citrus Shake",
         "image": bgSmoothieOrange,
-        "besttime": "Enjoy as a nighttime snack; its slow-digesting proteins help with overnight muscle repair.",
+        "color": "#F7CDC7",
         "ingredients": [
             {
-                "name": "cottage cheese",
+                "number": "01",
+                "name": "Cottage cheese",
                 "amount": "½ cup",
-                "image": "",
                 "fact": "Cottage cheese is made from curdled milk and is rich in casein, a slow-digesting protein."
             },
             {
-                "name": "orange peeled and segmented",
+                "number": "02",
+                "name": "Orange peeled",
                 "amount": "1",
-                "image": "",
                 "fact": "Oranges are one of the most popular fruits around the world and are known for their high vitamin C content."
             },
             {
-                "name": "honey",
+                "number": "03",
+                "name": "Honey",
                 "amount": "1 tablespoon",
-                "image": "",
                 "fact": "Honey's natural sugars are known to provide a quick energy boost."
             },
             {
-                "name": "water or orange juice",
+                "number": "04",
+                "name": "Orange juice",
                 "amount": "½ cup",
-                "image": "",
                 "fact": "Orange juice is a good source of several important nutrients, including potassium, vitamin C, and folate."
             }
         ]

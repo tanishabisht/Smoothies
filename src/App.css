@@ -172,7 +172,11 @@ hr {
 /* ## SMOOTHIE PAGE ## */
 /* ################### */
 
-.smoothie-container {
+/* ############## */
+/* ## CARAUSEL ## */
+/* ############## */
+
+.smoothie-view {
   background-image: url(./images/bg-smoothie1.png);
   height: 100vh;
   background-position: center;
@@ -180,37 +184,7 @@ hr {
   background-repeat: no-repeat;
 }
 
-.ingredients-data {
-  position: absolute;
-  bottom: 5rem;
-  left: 5rem;
-  font-family: "Manrope", sans-serif;
-  display: flex;
-  color: #7A7A7A;
-}
-
-.ingredient {
-  border-right: 2px solid #7A7A7A;
-  padding: 1rem;
-  text-align: center;
-}
-
-.ingredient:last-child {
-  border: 0px;
-}
-
-.ingredient-name {
-  font-weight: 400;
-  margin: 0;
-  margin-bottom: 10px;
-  color: #616161;
-}
-
-.ingredient-amount {
-  margin: 0;
-}
-
-.ingredients-funfact {
+.funfacts-section {
   position: absolute;
   top: 10rem;
   left: 5rem;
@@ -219,12 +193,93 @@ hr {
   padding: 3rem;
   width: 40rem;
   padding-left: 7rem;
+  height: 12rem;
 }
 
-.carousel-dots {
+.funfact-number {
+  position: absolute;
+  top: 0rem;
+  left: 1.5rem;
+  font-size: 10rem;
+  color: #F7CDC7;
+  z-index: 0;
+  animation-name: fadeInDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.funfact-title {
+  font-size: 3.5rem;
+  color: #616161;
+  position: relative;
+  z-index: 100;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  animation-name: slideInRightTitle;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideInRightTitle {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.funfact-desc {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  position: relative;
+  margin: 0;
+  z-index: 100;
+  animation-name: slideInRightDesc;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideInRightDesc {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.funfact-navigation {
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  position: absolute;
+  bottom: 2rem;
+  left: 45%;
 }
 
 .dot {
@@ -235,47 +290,91 @@ hr {
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.dot:hover {
-  background-color: #ffffffe6;
-}
-
+.dot:hover,
 .dot.active {
+  transform: scale(1.5);
   background-color: #fff;
 }
 
-.ingredient-number {
+/* ###################### */
+/* ## INGREDIENTS LIST ## */
+/* ###################### */
+
+.ingredients-list {
   position: absolute;
-  top: 0rem;
-  left: 1.5rem;
-  font-size: 10rem;
-  color: #F7CDC7;
-  z-index: 0;
+  bottom: 5rem;
+  left: 5rem;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  color: #7A7A7A;
+}
+
+.ingredient-detail {
+  border-right: 2px solid #7A7A7A;
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.ingredient-detail:last-child {
+  border: 0px;
+}
+
+.ingredient-detail:hover {
+  background-color: #fff6eb7e;
+  cursor: pointer;
 }
 
 .ingredient-title {
-  font-size: 3.5rem;
-  color: #616161;
-  position: relative;
-  z-index: 100;
+  font-size: 1.5rem;
   font-weight: 400;
   margin: 0;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+  color: #616161;
+  text-transform: uppercase;
 }
 
-.ingredient-desc {
-  font-family: "Manrope", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 200;
-  position: relative;
+.ingredient-info {
   margin: 0;
-  z-index: 100;
+  font-size: 1rem;
+}
+
+/* ################# */
+/* ## NEXT BUTTON ## */
+/* ################# */
+
+.next-smoothie-btn,
+.start-quiz-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.516);
+  color: beige;
+  padding: 5px 10px;
+  border: 0px;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.next-smoothie-btn:hover,
+.start-quiz-btn:hover {
+  background-color: #000;
+  cursor: pointer;
+  height: 6rem;
+  width: 6rem;
 }
 
 /* ############### */
-/* ## Quiz Page ## */
+/* ## QUIZ PAGE ## */
 /* ############### */
 
 .quiz-container {
@@ -455,28 +554,6 @@ hr {
   display: flex;
 }
 
-.ingredient-detail {
-  flex: 1;
-  padding: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.ingredient-detail:hover {
-  background-color: #b9b9b9;
-  cursor: pointer;
-}
-
-.ingredient-detail-name {
-  font-size: 1.5rem;
-  color: #FFFFFF;
-}
-
-.ingredient-detail-amount {
-  font-size: 1rem;
-  color: #FFFFFF;
-}
-
 .smoothie-image-container {
   display: flex;
   justify-content: center;
@@ -490,34 +567,6 @@ hr {
   height: 100%;
   object-fit: cover;
   width: 100%;
-}
-
-/* ################# */
-/* ## NEXT BUTTON ## */
-/* ################# */
-
-.button-right {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.516);
-  color: beige;
-  padding: 5px 10px;
-  border: 0px;
-  border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease, height 0.3s ease, width 0.3s ease;
-}
-
-.button-right:hover {
-  background-color: #000;
-  cursor: pointer;
-  height: 6rem;
-  width: 6rem;
 }
 
 /* ########## */
