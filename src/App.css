@@ -53,7 +53,8 @@ body {
 }
 
 .smoothie-menu,
-.smoothie-menu-no-underline {
+.smoothie-menu-no-underline,
+.smoothie-menu-main {
   color: #7A7A7A;
   text-decoration: none;
   margin: 0;
@@ -63,12 +64,24 @@ body {
   transition: color 0.8s ease;
 }
 
-.smoothie-menu:hover {
+.smoothie-menu-main {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 2px solid #9f9f9f;
+}
+
+.smoothie-menu-main:last-child {
+  border: 0;
+}
+
+.smoothie-menu:hover,
+.smoothie-menu-main:hover {
   color: #ED5F75;
   background-color: #fff6eb7e;
 }
 
-.smoothie-menu::after {
+.smoothie-menu::after,
+.smoothie-menu-main::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -79,7 +92,8 @@ body {
   transition: width 0.4s ease, left 0.4s ease;
 }
 
-.smoothie-menu:hover::after {
+.smoothie-menu:hover::after,
+.smoothie-menu-main:hover::after {
   width: 100%;
   left: 0;
 }

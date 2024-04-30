@@ -43,7 +43,7 @@ const LessonPage = () => {
     return (
         <div className='smoothie-view' style={{ backgroundImage: `url(${smoothie.image})` }}>
 
-            <SmoothiesNavbar id={id} smoothieName={smoothie.name} />
+            <SmoothiesNavbar />
 
             <div className="funfacts-section">
                 <div className='funfact-details' key={funfactIndex}>

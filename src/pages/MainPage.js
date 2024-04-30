@@ -14,7 +14,7 @@ const HomePage = () => {
 
                 <div className='content-wrapper'>
                     <h1 className='home-heading'>FitBlend</h1>
-                    <h2 className='home-description'>Unlock the secret to a healthier lifestyle with FitBlend, your ultimate destination for <u>protein-rich smoothies</u>.</h2>
+                    <h2 className='home-description'>Unlock the secret to a healthier lifestyle with FitBlend, your ultimate destination to <u>learn protein-rich smoothies</u>.</h2>
                     <div className='gallery'>
                         <Link className='gallery-item' to='/smoothie/1'>
                             <img src={Smoothie1} alt='Greek Yogurt Smoothie' />
