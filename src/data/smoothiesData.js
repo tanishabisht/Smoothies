@@ -29,9 +29,9 @@ const smoothiesData = [
             },
             {
                 "number": "04",
-                "name": "Chia seeds",
+                "name": "Hemp seeds",
                 "amount": "1 teaspoon",
-                "fact": "Chia seeds are a great source of omega-3 fatty acids, which benefit brain health."
+                "fact": "Hemp seeds are a complete protein source, containing <u>all nine essential amino acids</u>, that the body cannot produce on its own."
             }
         ]
     },
@@ -45,13 +45,13 @@ const smoothiesData = [
                 "number": "01",
                 "name": "Silken tofu",
                 "amount": "½ cup",
-                "fact": "Silken tofu is made by coagulating soy milk without curdling it, providing a smooth texture ideal for smoothies."
+                "fact": "Just 3.5 ounces of Silken Tofu (100 grams) provides about 8 grams of protein, making it a fantastic <u>plant-based protein source for vegans and vegetarians.</u>"
             },
             {
                 "number": "02",
                 "name": "Mixed berries",
                 "amount": "1 cup",
-                "fact": "Berries are among the highest antioxidant foods in the world."
+                "fact": "Berries are among <u>the highest antioxidant</u> foods in the world."
             },
             {
                 "number": "03",
@@ -61,9 +61,9 @@ const smoothiesData = [
             },
             {
                 "number": "04",
-                "name": "Honey",
+                "name": "Chia Seeds",
                 "amount": "1 tablespoon",
-                "fact": "Honey has been used as a sweetener for over 8,000 years."
+                "fact": "These little wonders can <u>absorb a ton of water</u>, making your smoothies <u>extra thick</u> and satisfying."
             }
         ]
     },
@@ -77,7 +77,7 @@ const smoothiesData = [
                 "number": "01",
                 "name": "Cottage cheese",
                 "amount": "½ cup",
-                "fact": "Cottage cheese is made from curdled milk and is rich in casein, a slow-digesting protein."
+                "fact": "Cottage cheese is made from curdled milk and is rich in <u>casein, a slow-digesting protein.</u>"
             },
             {
                 "number": "02",

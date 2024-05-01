@@ -40,7 +40,7 @@ const quizData = [
         "answer": 2
     },
     {
-        "question": "What type of protein is cottage cheese particularly rich in, making it beneficial for muscle maintenance overnight?",
+        "question": "What nutrient is cottage cheese rich in, making it a slow-digesting protein?",
         "options": [
             "Whey protein",
             "Casein protein",
