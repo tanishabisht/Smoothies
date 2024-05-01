@@ -62,6 +62,11 @@ const LessonPage = () => {
                 </div>
             </div>
 
+            <div className='funfact-label'>
+                <p>Ingredient Funfact</p>
+                <span className='bullet'>&bull;</span>
+            </div>
+
             <div className='ingredients-list'>
                 {smoothie.ingredients.map((ingredient, index) => (
                     <div key={index} className='ingredient-detail' onClick={() => handleIngredientClick(index)}>
