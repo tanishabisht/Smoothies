@@ -12,9 +12,9 @@ const quizData = [
     {
         "question": "Among the ingredients listed in the smoothie recipes, which one is emphasized as a plant-based protein source suitable for vegans and vegetarians?",
         "options": [
-            "Greek Yogurt",
-            "Mixed berries",
-            "Honey",
+            "Sunflower seeds",
+            "Quinoa",
+            "Spirulina",
             "Silken tofu"
         ],
         "answer": 3
@@ -22,10 +22,10 @@ const quizData = [
     {
         "question": "Which complete protein source contains all nine essential amino acids?",
         "options": [
-            "Almond butter",
+            "Sunflower seeds",
             "Hemp seeds",
-            "Peanut butter",
-            "Cottage cheese"
+            "Chia seeds",
+            "Basil seeds"
         ],
         "answer": 1
     },
@@ -33,7 +33,7 @@ const quizData = [
         "question": "What unique property do chia seeds add to smoothies besides protein?",
         "options": [
             "Natural sugars",
-            "Extra crunch",
+            "Smoothening effect",
             "Thickening effect",
             "Cooling effect"
         ],
