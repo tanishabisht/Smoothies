@@ -141,6 +141,15 @@ hr {
   margin-bottom: 5rem;
 }
 
+.home-caption {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ED5F75;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
 .gallery {
   display: flex;
   justify-content: space-around;
@@ -297,8 +306,17 @@ hr {
 
 .caption {
   position: absolute;
-  top: 27.5rem;
+  top: 7rem;
   left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption-container {
+  position: absolute;
+  top: 27rem;
+  left: 33.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,7 +324,7 @@ hr {
 
 .caption-text {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 17px;
   color: #C69A94;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
@@ -318,6 +336,7 @@ hr {
   font-size: 3rem;
   vertical-align: middle;
   margin: 0 5px;
+  color: #BC695E;
 }
 
 .funfact-navigation {
