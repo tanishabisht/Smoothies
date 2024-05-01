@@ -7,15 +7,15 @@ const quizData = [
             "Almost double the protein content",
             "More lactose"
         ],
-        "answer": 3
+        "answer": 2
     },
     {
         "question": "Among the ingredients listed in the smoothie recipes, which one is emphasized as a plant-based protein source suitable for vegans and vegetarians?",
         "options": [
             "Greek Yogurt",
             "Mixed berries",
-            "Silken tofu",
-            "Honey"
+            "Honey",
+            "Silken tofu"
         ],
         "answer": 3
     },
@@ -27,7 +27,7 @@ const quizData = [
             "Peanut butter",
             "Cottage cheese"
         ],
-        "answer": 2
+        "answer": 1
     },
     {
         "question": "What unique property do chia seeds add to smoothies besides protein?",
@@ -37,17 +37,17 @@ const quizData = [
             "Thickening effect",
             "Cooling effect"
         ],
-        "answer": 3
+        "answer": 2
     },
     {
         "question": "What nutrient is cottage cheese rich in, making it a slow-digesting protein?",
         "options": [
-            "Whey protein",
             "Casein protein",
+            "Whey protein",
             "Soy protein",
             "Hydrolyzed protein"
         ],
-        "answer": 2
+        "answer": 0
     }
 ]
 
