@@ -7,15 +7,15 @@ const quizData = [
             "Almost double the protein content",
             "More lactose"
         ],
-        "answer": 2
+        "answer": 3
     },
     {
-        "question": "Silken tofu is praised for its ability to add what nutritional benefits to smoothies without altering texture?",
+        "question": "Among the ingredients listed in the smoothie recipes, which one is emphasized as a plant-based protein source suitable for vegans and vegetarians?",
         "options": [
-            "Protein and fiber",
-            "Fiber and vitamins",
-            "Vitamins and minerals",
-            "Protein and calcium"
+            "Greek Yogurt",
+            "Mixed berries",
+            "Silken tofu",
+            "Honey"
         ],
         "answer": 3
     },
@@ -27,7 +27,7 @@ const quizData = [
             "Peanut butter",
             "Cottage cheese"
         ],
-        "answer": 1
+        "answer": 2
     },
     {
         "question": "What unique property do chia seeds add to smoothies besides protein?",
@@ -37,7 +37,7 @@ const quizData = [
             "Thickening effect",
             "Cooling effect"
         ],
-        "answer": 2
+        "answer": 3
     },
     {
         "question": "What nutrient is cottage cheese rich in, making it a slow-digesting protein?",
@@ -47,7 +47,7 @@ const quizData = [
             "Soy protein",
             "Hydrolyzed protein"
         ],
-        "answer": 1
+        "answer": 2
     }
 ]
 
