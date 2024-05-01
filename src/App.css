@@ -295,23 +295,29 @@ hr {
   }
 }
 
-.funfact-label {
+.caption {
   position: absolute;
   top: 27.5rem;
   left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.funfact-label p {
+.caption-text {
   display: inline-block;
-  font-size: 1.2rem;
-  padding-right: 5px;
-  color: #b1afaf;
+  font-size: 1.1rem;
+  color: #C69A94;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  margin: 0;
 }
 
-.bullet {
+.caption-dot {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   vertical-align: middle;
+  margin: 0 5px;
 }
 
 .funfact-navigation {
@@ -353,6 +359,12 @@ hr {
   color: #7A7A7A;
 }
 
+.ingredient-detail.selected {
+  background-color: #fff6eb7e;
+  border: 0;
+  border-right: 2px solid #7A7A7A;
+}
+
 .ingredient-detail {
   border-right: 2px solid #7A7A7A;
   text-align: center;
@@ -367,7 +379,7 @@ hr {
 }
 
 .ingredient-detail:hover {
-  background-color: #fff6eb7e;
+  background-color: #fff6eb4f;
   cursor: pointer;
 }
 

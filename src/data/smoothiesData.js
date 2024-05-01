@@ -8,6 +8,7 @@ const smoothiesData = [
         "name": "Greek Yogurt Smoothie",
         "image": bgSmoothiePink,
         "color": "#EDC8CB",
+        "dark-color": "#CF7E81",
         "ingredients": [
             {
                 "number": "01",
@@ -39,6 +40,7 @@ const smoothiesData = [
         "id": 2,
         "name": "Silken Tofu Berry Blend",
         "image": bgSmoothiePurple,
+        "dark-color": "#AC80E3",
         "color": "#DCCBF1",
         "ingredients": [
             {
@@ -71,6 +73,7 @@ const smoothiesData = [
         "id": 3,
         "name": "Cottage Cheese Citrus Shake",
         "image": bgSmoothieOrange,
+        "dark-color": "#B98079",
         "color": "#F7CDC7",
         "ingredients": [
             {

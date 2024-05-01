@@ -62,17 +62,22 @@ const LessonPage = () => {
                 </div>
             </div>
 
-            <div className='funfact-label'>
-                <p>Ingredient Funfact</p>
-                <span className='bullet'>&bull;</span>
+            <div className='caption'>
+                <p className='caption-text' style={{color: smoothiesData[id - 1]['dark-color']}}>INGREDIENT FUN FACT</p>
+                <span className='caption-dot' style={{color: smoothiesData[id - 1]['dark-color']}}>&bull;</span>
+                <p className='caption-text' style={{color: smoothiesData[id - 1]['dark-color']}}>INGREDIENT FUN FACT</p>
+                <span className='caption-dot' style={{color: smoothiesData[id - 1]['dark-color']}}>&bull;</span>
+                <p className='caption-text' style={{color: smoothiesData[id - 1]['dark-color']}}>INGREDIENT FUN FACT</p>
+                <span className='caption-dot' style={{color: smoothiesData[id - 1]['dark-color']}}>&bull;</span>
+                <p className='caption-text' style={{color: smoothiesData[id - 1]['dark-color']}}>INGREDIENT FUN FACT</p>
             </div>
 
             <div className='ingredients-list'>
                 {smoothie.ingredients.map((ingredient, index) => (
-                    <div key={index} className='ingredient-detail' onClick={() => handleIngredientClick(index)}>
-                        <h2 className='ingredient-title'>{ingredient.name}</h2>
-                        <p className='ingredient-info'>{ingredient.amount}</p>
-                    </div>
+                    <div className={`ingredient-detail${funfactIndex === index ? ' selected' : ''}`} onClick={() => handleIngredientClick(index)}>
+                    <h2 className='ingredient-title'>{ingredient.name}</h2>
+                    <p className='ingredient-info'>{ingredient.amount}</p>
+                </div>
                 ))}
             </div>
 
