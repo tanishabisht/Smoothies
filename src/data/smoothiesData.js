@@ -45,7 +45,7 @@ const smoothiesData = [
                 "number": "01",
                 "name": "Silken tofu",
                 "amount": "½ cup",
-                "fact": "Just 3.5 ounces of Silken Tofu (100 grams) provides about 8 grams of protein, making it a fantastic <u>plant-based protein source for vegans and vegetarians.</u>"
+                "fact": "3.5 oz (100g) of Silken Tofu offers 8g protein, making it a fantastic <u>plant-based protein source for vegans.</u>"
             },
             {
                 "number": "02",
