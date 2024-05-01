@@ -82,7 +82,7 @@ const smoothiesData = [
             {
                 "number": "02",
                 "name": "Orange peeled",
-                "amount": "1",
+                "amount": "1 Orange",
                 "fact": "Oranges are one of the most popular fruits around the world and are known for their high vitamin C content."
             },
             {
