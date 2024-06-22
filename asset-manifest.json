@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Smoothies/static/css/main.e71494fd.css",
-    "main.js": "/Smoothies/static/js/main.9e0c55ca.js",
-    "static/media/bg-smoothie2.png": "/Smoothies/static/media/bg-smoothie2.cccf8c2549f31872eb24.png",
-    "static/media/bg-smoothie3.png": "/Smoothies/static/media/bg-smoothie3.9864e75ca14fdcbff0f0.png",
-    "static/media/bg-smoothie1.png": "/Smoothies/static/media/bg-smoothie1.a48dc58a3964a85b1c4e.png",
-    "static/media/bg-questions.png": "/Smoothies/static/media/bg-questions.0698829dd5a6e970bfef.png",
-    "static/media/bg-main.png": "/Smoothies/static/media/bg-main.b82a60aa9783fbf3b8ab.png",
-    "static/media/main-smoothie3.png": "/Smoothies/static/media/main-smoothie3.6a2c19d036ed59bd3c66.png",
-    "static/media/main-smoothie2.png": "/Smoothies/static/media/main-smoothie2.60e79c9dadfd85f71243.png",
-    "static/media/main-smoothie1.png": "/Smoothies/static/media/main-smoothie1.f64e51413e973215a379.png",
-    "index.html": "/Smoothies/index.html",
-    "main.e71494fd.css.map": "/Smoothies/static/css/main.e71494fd.css.map",
-    "main.9e0c55ca.js.map": "/Smoothies/static/js/main.9e0c55ca.js.map"
+    "main.css": "/UI-FitBlend/static/css/main.376a9886.css",
+    "main.js": "/UI-FitBlend/static/js/main.289be9db.js",
+    "static/media/bg-smoothie2.png": "/UI-FitBlend/static/media/bg-smoothie2.cccf8c2549f31872eb24.png",
+    "static/media/bg-smoothie3.png": "/UI-FitBlend/static/media/bg-smoothie3.9864e75ca14fdcbff0f0.png",
+    "static/media/bg-smoothie1.png": "/UI-FitBlend/static/media/bg-smoothie1.a48dc58a3964a85b1c4e.png",
+    "static/media/bg-questions.png": "/UI-FitBlend/static/media/bg-questions.0698829dd5a6e970bfef.png",
+    "static/media/bg-main.png": "/UI-FitBlend/static/media/bg-main.b82a60aa9783fbf3b8ab.png",
+    "static/media/main-smoothie3.png": "/UI-FitBlend/static/media/main-smoothie3.6a2c19d036ed59bd3c66.png",
+    "static/media/main-smoothie2.png": "/UI-FitBlend/static/media/main-smoothie2.60e79c9dadfd85f71243.png",
+    "static/media/main-smoothie1.png": "/UI-FitBlend/static/media/main-smoothie1.f64e51413e973215a379.png",
+    "index.html": "/UI-FitBlend/index.html",
+    "main.376a9886.css.map": "/UI-FitBlend/static/css/main.376a9886.css.map",
+    "main.289be9db.js.map": "/UI-FitBlend/static/js/main.289be9db.js.map"
   },
   "entrypoints": [
-    "static/css/main.e71494fd.css",
-    "static/js/main.9e0c55ca.js"
+    "static/css/main.376a9886.css",
+    "static/js/main.289be9db.js"
   ]
 }
