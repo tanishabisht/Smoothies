@@ -1,12 +1,15 @@
-# Protein based Smoothies
-Unlock the secret to a healthier lifestyle with FitBlend, your ultimate destination to learn protein-rich smoothies.
+# UI - Protein based smoothies
+FitBlend is an app that helps you learn how to make tasty, protein-packed smoothies. It's perfect for fitness lovers or anyone wanting to eat healthier. FitBlend gives you quick and easy smoothie recipes and includes a quiz to test your smoothie-making skills.
 
-## URLs
-Hosted URL: https://tanishabisht.github.io/Smoothies/#/
-GitHub URL: https://github.com/tanishabisht/Smoothies
-YouTube URL: https://www.youtube.com/watch?v=6QnKjbe5j98
+[YouTube video of the application.](https://www.youtube.com/watch?v=6QnKjbe5j98)
 
-## Steps to run the application
-- NOTE: download node.js in your local machine
+## Instructions to run the application
+**NOTE:** download [node.js](https://nodejs.org/en) in your local machine
 - `npm install` or `yarn install`
 - `npm start` or `yarn run start`
+
+## Demo
+![Demo not found](/demo.gif)
+
+## Technologies used
+`react` `gh-pages`
